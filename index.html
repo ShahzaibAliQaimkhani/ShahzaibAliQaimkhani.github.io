@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shahzaib Ali — machine learning for human movement</title>
+
+<meta name="description" content="Shahzaib Ali, M.Sc. Autonomy Technologies at FAU Erlangen-Nürnberg. Machine learning for human movement. Seeking a Master's thesis position from October 2026 in learning-based robotics.">
+<meta name="author" content="Shahzaib Ali">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shahzaib Ali — machine learning for human movement">
+<meta property="og:description" content="M.Sc. Autonomy Technologies, FAU Erlangen-Nürnberg. Seeking a Master's thesis position from October 2026 in learning-based robotics.">
+<!-- TODO: replace with your live URL once GitHub Pages is enabled -->
+<meta property="og:url" content="https://shahzaibaliqaimkhani.github.io/">
+<!-- TODO: drop a 1200x630 preview image at assets/og-preview.png for rich link previews -->
+<meta property="og:image" content="https://shahzaibaliqaimkhani.github.io/assets/og-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <a class="bar-name" href="#top">Shahzaib Ali</a>
+  <nav class="bar-nav" aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#background">Background</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" class="theme" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+    <span class="theme-dot" aria-hidden="true"></span>
+  </button>
+</header>
+
+<main id="main">
+
+<section id="top" class="hero">
+  <p class="status">Available from October 2026</p>
+
+  <h1>I'm looking for a Master's thesis position in learning-based robotics.</h1>
+
+  <p class="lede">
+    I train models on human movement — gait, kinematics, force data — and I want to
+    take that onto a humanoid platform: learned locomotion, motion imitation, intent
+    estimation. I'm finishing an M.Sc. in Autonomy Technologies at FAU
+    Erlangen-Nürnberg, 80 of 120 ECTS done, thesis phase open from October 2026.
+  </p>
+
+  <figure class="cycle" aria-labelledby="cycle-cap">
+    <svg viewBox="0 0 1000 210" role="img" aria-label="Schematic knee flexion across one gait cycle: stance phase to 60 percent, then a swing-phase flexion peak." preserveAspectRatio="none">
+      <rect class="cycle-stance" x="0" y="20" width="600" height="165"></rect>
+      <line class="cycle-axis" x1="0" y1="185" x2="1000" y2="185"></line>
+      <line class="cycle-mark" x1="600" y1="20" x2="600" y2="185"></line>
+      <path class="cycle-line" d="M 0,169 C 60,150 100,138 150,138 C 220,138 320,168 400,169 C 500,170 590,70 715,42 C 810,20 900,118 1000,169" fill="none"></path>
+      <circle class="cycle-dot" cx="0" cy="169" r="4"></circle>
+      <circle class="cycle-dot" cx="600" cy="87" r="4"></circle>
+      <circle class="cycle-dot" cx="1000" cy="169" r="4"></circle>
+    </svg>
+    <figcaption id="cycle-cap">
+      <span>Heel strike · stance</span>
+      <span class="cycle-cap-mid">Toe-off, 60%</span>
+      <span>Swing · next heel strike</span>
+    </figcaption>
+  </figure>
+
+  <dl class="facts">
+    <div><dt>Based in</dt><dd>Erlangen, Germany</dd></div>
+    <div><dt>Open to</dt><dd>On-site in Germany, or remote within the EU</dd></div>
+    <div><dt>Focus</dt><dd>Deep learning, human motion, explainability</dd></div>
+  </dl>
+</section>
+
+<section id="work" class="section">
+  <h2>Selected work</h2>
+
+  <article class="study">
+    <header class="study-head">
+      <h3>Dataset bias in multi-source gait biomechanics</h3>
+      <p class="study-meta">Machine Learning and Data Analytics Lab (MaD Lab), FAU Erlangen-Nürnberg</p>
+    </header>
+
+    <p class="study-lede">
+      I trained classifiers to predict which of five public databases a gait recording
+      came from. Not because that's a useful thing to know — because if a model can
+      recover the source from the signal, then any model trained on pooled gait data
+      may be learning database artifacts rather than biomechanics. The classifier is a
+      diagnostic instrument, not the goal.
+    </p>
+
+    <figure class="fig">
+      <div class="fig-scroll">
+        <svg viewBox="0 0 720 108" role="img" aria-label="Pipeline: motion capture, to 101-point gait cycles, to four modality cases across five workflows, to an MLP with relevance attribution.">
+          <text class="t-num" x="0" y="12" fill="currentColor" opacity="0.45">1</text>
+          <rect class="step-box" x="0" y="20" width="128" height="54" rx="3"></rect>
+          <line class="step-rule" x1="0" y1="20" x2="0" y2="74" stroke="var(--slate)"></line>
+          <text class="t-step" x="11" y="43">Motion capture</text>
+          <text class="t-tick" x="11" y="59">5 databases</text>
+          <path class="step-arrow" d="M133 47 h10 m-4 -4 l4 4 l-4 4"></path>
+          <text class="t-num" x="148" y="12" fill="currentColor" opacity="0.45">2</text>
+          <rect class="step-box" x="148" y="20" width="128" height="54" rx="3"></rect>
+          <line class="step-rule" x1="148" y1="20" x2="148" y2="74" stroke="var(--slate)"></line>
+          <text class="t-step" x="159" y="43">Cycle extraction</text>
+          <text class="t-tick" x="159" y="59">101-point normalise</text>
+          <path class="step-arrow" d="M281 47 h10 m-4 -4 l4 4 l-4 4"></path>
+          <text class="t-num" x="296" y="12" fill="currentColor" opacity="0.45">3</text>
+          <rect class="step-box" x="296" y="20" width="128" height="54" rx="3"></rect>
+          <line class="step-rule" x1="296" y1="20" x2="296" y2="33" stroke="var(--c1)"></line>
+          <line class="step-rule" x1="296" y1="33" x2="296" y2="47" stroke="var(--c2)"></line>
+          <line class="step-rule" x1="296" y1="47" x2="296" y2="60" stroke="var(--c3)"></line>
+          <line class="step-rule" x1="296" y1="60" x2="296" y2="74" stroke="var(--c4)"></line>
+          <text class="t-step" x="307" y="43">4 modality cases</text>
+          <text class="t-tick" x="307" y="59">× 5 workflows</text>
+          <path class="step-arrow" d="M429 47 h10 m-4 -4 l4 4 l-4 4"></path>
+          <text class="t-num" x="444" y="12" fill="currentColor" opacity="0.45">4</text>
+          <rect class="step-box" x="444" y="20" width="128" height="54" rx="3"></rect>
+          <line class="step-rule" x1="444" y1="20" x2="444" y2="74" stroke="var(--slate)"></line>
+          <text class="t-step" x="455" y="43">MLP, grouped CV</text>
+          <text class="t-tick" x="455" y="59">2,250 fits per case</text>
+          <path class="step-arrow" d="M577 47 h10 m-4 -4 l4 4 l-4 4"></path>
+          <text class="t-num" x="592" y="12" fill="currentColor" opacity="0.45">5</text>
+          <rect class="step-box" x="592" y="20" width="128" height="54" rx="3"></rect>
+          <line class="step-rule" x1="592" y1="20" x2="592" y2="74" stroke="var(--accent)"></line>
+          <text class="t-step" x="603" y="43">LRP attribution</text>
+          <text class="t-tick" x="603" y="59">ε = 1e-6</text>
+        </svg>
+      </div>
+      <figcaption>
+        The pipeline. Everything downstream of step 2 is a controlled comparison: the
+        same cycles, re-represented and re-scaled, so differences in accuracy belong to
+        the representation rather than to the model.
+      </figcaption>
+    </figure>
+
+    <h4>What the data looked like</h4>
+    <p>
+      Inputs were gait cycles time-normalised to 101 points, drawn from five databases
+      with different collection protocols and processing conventions. I ran four
+      modality cases against each other: marker trajectories with ground reaction
+      forces, inverse kinematics alone, inverse dynamics alone, and inverse kinematics
+      combined with inverse dynamics. Each case passed through five scaling workflows —
+      pooling before scaling, scaling per database then pooling, scaling per trial, and
+      two variants in between. One of those workflows uses known database identity to
+      select the scaler, so it functions as a diagnostic upper bound rather than a
+      deployable pipeline, and I report it as such.
+    </p>
+
+    <figure class="fig">
+      <div class="fig-scroll">
+        <svg viewBox="0 0 720 210" role="img" aria-label="Four modality cases against five scaling workflows, twenty combinations. Workflow 2 is marked diagnostic only.">
+          <text class="t-head" x="200" y="14">WF1</text>
+          <text class="t-tick" x="200" y="29">pool, then scale</text>
+          <text class="t-head" x="306" y="14">WF2</text>
+          <text class="t-tick" x="306" y="29">scale per DB</text>
+          <text class="t-head" x="412" y="14">WF3</text>
+          <text class="t-tick" x="412" y="29">scale per trial</text>
+          <text class="t-head" x="518" y="14">WF4</text>
+          <text class="t-tick" x="518" y="29" opacity="0.5">variant</text>
+          <text class="t-head" x="624" y="14">WF5</text>
+          <text class="t-tick" x="624" y="29" opacity="0.5">variant</text>
+          <!-- TODO: WF4 and WF5 names — fill these in from your report -->
+          <rect x="0" y="44" width="9" height="9" fill="var(--c1)" rx="2"></rect>
+          <text class="t-row" x="18" y="53">1 Marker + GRF</text>
+          <rect class="cell cell-1" x="200" y="40" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-1" x="306" y="40" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-1" x="412" y="40" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-1" x="518" y="40" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-1" x="624" y="40" width="96" height="18" rx="2"></rect>
+          <rect x="0" y="82" width="9" height="9" fill="var(--c2)" rx="2"></rect>
+          <text class="t-row" x="18" y="91">2 Inverse kinematics</text>
+          <rect class="cell cell-2" x="200" y="78" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-2" x="306" y="78" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-2" x="412" y="78" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-2" x="518" y="78" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-2" x="624" y="78" width="96" height="18" rx="2"></rect>
+          <rect x="0" y="120" width="9" height="9" fill="var(--c3)" rx="2"></rect>
+          <text class="t-row" x="18" y="129">3 Inverse dynamics</text>
+          <rect class="cell cell-3" x="200" y="116" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-3" x="306" y="116" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-3" x="412" y="116" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-3" x="518" y="116" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-3" x="624" y="116" width="96" height="18" rx="2"></rect>
+          <rect x="0" y="158" width="9" height="9" fill="var(--c4)" rx="2"></rect>
+          <text class="t-row" x="18" y="167">4 IK + ID</text>
+          <rect class="cell cell-4" x="200" y="154" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-4" x="306" y="154" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-4" x="412" y="154" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-4" x="518" y="154" width="96" height="18" rx="2"></rect>
+          <rect class="cell cell-4" x="624" y="154" width="96" height="18" rx="2"></rect>
+          <rect class="cell-flag" x="301" y="34" width="106" height="144" rx="3"></rect>
+          <text class="t-tick" x="301" y="196">WF2 uses known database identity — diagnostic only</text>
+        </svg>
+      </div>
+      <figcaption>
+        Twenty combinations, each one a full hyperparameter search. The dashed column is
+        the workflow that picks its scaler using the label it is trying to predict, so it
+        bounds the problem rather than solving it.
+      </figcaption>
+    </figure>
+
+    <h4>Why the model got simpler, not more complex</h4>
+    <p>
+      I began with a 1D CNN, which is the natural choice for a 101-point waveform: it
+      learns local shape, peaks and transitions without hand-designed features. It
+      worked, and it produced the first evidence that database source was highly
+      separable. But I moved to a single-hidden-layer MLP for the final experiments,
+      for three reasons. It matched the reference methodology I was comparing against,
+      which made the results interpretable next to prior work. It isolated the effect
+      of scaling workflow and input modality instead of confounding them with
+      architectural choices. And it gave a far cleaner mapping for layer-wise relevance
+      attribution. The simpler model was the more useful instrument.
+    </p>
+
+    <h4>Evaluation</h4>
+    <p>
+      Hyperparameter search covered six hidden sizes, three learning rates and five
+      batch sizes — 90 configurations per fold and workflow, 2,250 fits per case.
+      Cross-validation was grouped by participant, so every cycle from one person
+      stayed inside a single outer fold; without that, a model can recognise a walker
+      rather than a database and the whole result collapses. Model selection was on
+      validation loss.
+    </p>
+
+    <h4>Results</h4>
+    <p>
+      Macro F1 for database-source classification, averaged across workflows, with a
+      balanced re-run at 169 cycles per database to test whether class imbalance was
+      driving the outcome:
+    </p>
+
+    <figure class="fig">
+      <div class="fig-scroll">
+        <svg viewBox="0 0 720 252" role="img" aria-label="Macro F1 by case. Case 1 moves from 97.31 to 98.86 percent after balancing, case 2 from 96.95 to 97.79, case 3 from 99.67 to 99.41, case 4 from 99.78 to 99.68.">
+          <line class="grid" x1="160" y1="34" x2="160" y2="214"></line>
+          <line class="grid" x1="285" y1="34" x2="285" y2="214"></line>
+          <line class="grid" x1="410" y1="34" x2="410" y2="214"></line>
+          <line class="grid" x1="535" y1="34" x2="535" y2="214"></line>
+          <line class="grid" x1="660" y1="34" x2="660" y2="214"></line>
+          <line class="axis" x1="160" y1="214" x2="678" y2="214"></line>
+
+          <text class="t-tick" x="160" y="232" text-anchor="middle">96%</text>
+          <text class="t-tick" x="285" y="232" text-anchor="middle">97%</text>
+          <text class="t-tick" x="410" y="232" text-anchor="middle">98%</text>
+          <text class="t-tick" x="535" y="232" text-anchor="middle">99%</text>
+          <text class="t-tick" x="660" y="232" text-anchor="middle">100%</text>
+
+          <rect x="0" y="50" width="9" height="9" fill="var(--c1)" rx="2"></rect>
+          <text class="t-row" x="18" y="59">1 Marker + GRF</text>
+          <line class="dumb-join k1" x1="323.8" y1="55" x2="517.5" y2="55"></line>
+          <circle class="dumb-a k1" cx="323.8" cy="55" r="6"></circle>
+          <circle class="dumb-b k1" cx="517.5" cy="55" r="5.5"></circle>
+
+          <rect x="0" y="95" width="9" height="9" fill="var(--c2)" rx="2"></rect>
+          <text class="t-row" x="18" y="104">2 Inverse kinematics</text>
+          <line class="dumb-join k2" x1="278.8" y1="100" x2="383.8" y2="100"></line>
+          <circle class="dumb-a k2" cx="278.8" cy="100" r="6"></circle>
+          <circle class="dumb-b k2" cx="383.8" cy="100" r="5.5"></circle>
+
+          <rect x="0" y="140" width="9" height="9" fill="var(--c3)" rx="2"></rect>
+          <text class="t-row" x="18" y="149">3 Inverse dynamics</text>
+          <line class="dumb-join k3" x1="586.3" y1="145" x2="618.8" y2="145"></line>
+          <circle class="dumb-a k3" cx="618.8" cy="145" r="6"></circle>
+          <circle class="dumb-b k3" cx="586.3" cy="145" r="5.5"></circle>
+
+          <rect x="0" y="185" width="9" height="9" fill="var(--c4)" rx="2"></rect>
+          <text class="t-row" x="18" y="194">4 IK + ID</text>
+          <line class="dumb-join k4" x1="620" y1="190" x2="632.5" y2="190"></line>
+          <circle class="dumb-a k4" cx="632.5" cy="190" r="6"></circle>
+          <circle class="dumb-b k4" cx="620" cy="190" r="5.5"></circle>
+
+          <text class="t-tick" x="678" y="20" text-anchor="end" opacity="0.65">axis starts at 96%</text>
+        </svg>
+      </div>
+      <ul class="legend">
+        <li><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="var(--slate)"></circle></svg>Primary run, all cycles</li>
+        <li><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="none" stroke="var(--slate)" stroke-width="2"></circle></svg>Balanced, 169 cycles per database</li>
+      </ul>
+      <figcaption>
+        Note the axis: it starts at 96%, so these gaps are smaller than they look. That
+        is the point — every case sits near the top, and cases 3 and 4 are pressed against
+        the ceiling whether or not the classes are balanced.
+      </figcaption>
+    </figure>
+
+    <div class="table-scroll">
+      <table>
+        <caption>Macro F1 by modality case, primary run against balanced sensitivity check</caption>
+        <thead>
+          <tr>
+            <th scope="col">Case</th>
+            <th scope="col">Input</th>
+            <th scope="col" class="num">Primary</th>
+            <th scope="col" class="num">Balanced</th>
+            <th scope="col" class="num">Δ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row"><span class="key key-1" aria-hidden="true"></span>1</th><td>Marker + GRF</td><td class="num">97.31%</td><td class="num">98.86%</td><td class="num pos">+1.54 pp</td></tr>
+          <tr><th scope="row"><span class="key key-2" aria-hidden="true"></span>2</th><td>Inverse kinematics</td><td class="num">96.95%</td><td class="num">97.79%</td><td class="num pos">+0.85 pp</td></tr>
+          <tr><th scope="row"><span class="key key-3" aria-hidden="true"></span>3</th><td>Inverse dynamics</td><td class="num">99.67%</td><td class="num">99.41%</td><td class="num">−0.26 pp</td></tr>
+          <tr><th scope="row"><span class="key key-4" aria-hidden="true"></span>4</th><td>IK + ID</td><td class="num">99.78%</td><td class="num">99.68%</td><td class="num">−0.10 pp</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Every representation carries source-specific information. Inverse dynamics is the
+      strongest signal, which most likely reflects differences in processing convention
+      between labs rather than differences in how people walk. The balanced run matters
+      because the databases contributed unequal numbers of cycles: cases 1 and 2 improve
+      once that's corrected, meaning imbalance was hurting the weaker workflows, while
+      cases 3 and 4 stay near ceiling, meaning the inverse-dynamics signal is not an
+      artefact of class counts.
+    </p>
+    <p>
+      Two things I will not claim. Cases 3 and 4 are both close enough to ceiling that
+      adding kinematics to dynamics cannot be called a meaningful improvement. And a
+      per-trial scaling workflow still separates the databases, so source identity is
+      not carried by absolute amplitude alone.
+    </p>
+
+    <h4>What the models were actually using</h4>
+    <p>
+      I applied layer-wise relevance propagation through Zennit, using the epsilon rule
+      at ε = 1e-6 on correctly classified samples, with positive relevance normalised
+      and averaged per database. In the marker-plus-force case, relevance splits between
+      marker trajectories and ground reaction forces, with force channels carrying more
+      weight individually simply because there are fewer of them. In the combined
+      kinematics-and-dynamics case, the attribution shifts with the scaling workflow:
+      pooled scaling pushes relevance toward kinematics, per-database and per-trial
+      scaling push it toward dynamics. That shift is itself a finding — preprocessing
+      changes what the model looks at, not just how well it scores.
+    </p>
+    <p class="caution">
+      LRP here explains a source-prediction decision. It is not evidence of clinical or
+      biomechanical importance, and I don't present it as such.
+    </p>
+
+    <!-- TODO: drop a figure at assets/lrp-relevance.png (the case 4 LRP modality
+         contribution plot is the strongest single image you have) and delete the
+         placeholder class from the figure below. This is the highest-value thing
+         you can add to this page. -->
+    <figure class="shot is-empty">
+      <div class="shot-slot">Figure slot — add assets/lrp-relevance.png</div>
+      <figcaption>Relevance by input modality, case 4, across scaling workflows.</figcaption>
+    </figure>
+
+    <h4>The point of all of it</h4>
+    <p>
+      Models trained on pooled gait datasets may be learning which lab recorded the
+      data unless source bias is explicitly controlled. That is a problem for anyone
+      hoping their model generalises across datasets, and it is the direction I would
+      like to keep working in.
+    </p>
+
+    <ul class="stack" aria-label="Tools used">
+      <li>Python</li><li>PyTorch</li><li>Zennit</li><li>scikit-learn</li>
+      <li>NumPy</li><li>pandas</li><li>Matplotlib</li>
+    </ul>
+
+    <!-- TODO: point this at the actual repo once it's public. If the data is under
+         lab restrictions, say so here and link a PDF write-up instead of code. -->
+    <p class="study-link"><a href="https://github.com/ShahzaibAliQaimkhani">Code and write-up on GitHub</a></p>
+  </article>
+
+  <div class="others">
+
+    <article class="entry">
+      <h3>Cloud-based monitoring and control of industrial automation</h3>
+      <p class="entry-meta">Bachelor's thesis, NED University (IIEE), Karachi</p>
+      <p>
+        An IoT gateway bridging programmable logic controllers and field sensors to a
+        cloud backend, handling protocol translation between industrial fieldbus and
+        internet protocols. Live operational data fed a dashboard for real-time
+        visualisation, historical analytics and remote actuation. The aim was
+        condition-based maintenance on equipment that can't be taken offline to be
+        inspected — catch a developing fault from its signal rather than servicing on
+        a fixed calendar.
+      </p>
+      <ul class="stack"><li>PLC ladder logic</li><li>Modbus</li><li>Ethernet</li><li>Firebase</li><li>ESP32 / Arduino</li></ul>
+      <!-- TODO: repo link -->
+      <p class="study-link"><a href="https://github.com/ShahzaibAliQaimkhani">Repository</a></p>
+    </article>
+
+    <article class="entry">
+      <h3>Robotic arm — design and control</h3>
+      <p class="entry-meta">Academic project, NED University</p>
+      <p>
+        A multi-degree-of-freedom arm for pick-and-place work: linkage design, actuator
+        sizing, forward and inverse kinematics, motion control, and repeatability
+        testing across a defined workspace. The kinematic chain here is the same
+        mathematics I later applied to human joint models in the gait work — one is a
+        manipulator, the other is a leg.
+      </p>
+      <ul class="stack"><li>Kinematics</li><li>Motion control</li><li>Embedded C</li></ul>
+      <!-- TODO: repo link -->
+      <p class="study-link"><a href="https://github.com/ShahzaibAliQaimkhani">Repository</a></p>
+    </article>
+
+    <article class="entry">
+      <h3>PLC to microcontroller communication interface</h3>
+      <p class="entry-meta">Academic project, NED University</p>
+      <p>
+        Bidirectional data exchange between an industrial PLC and an Arduino/ESP32,
+        covering signal-level compatibility and protocol handling — the practical
+        bridge between installed industrial control equipment and cheap connected
+        hardware.
+      </p>
+      <ul class="stack"><li>PLC</li><li>ESP32 / Arduino</li><li>Serial protocols</li></ul>
+      <!-- TODO: repo link -->
+      <p class="study-link"><a href="https://github.com/ShahzaibAliQaimkhani">Repository</a></p>
+    </article>
+
+    <article class="entry">
+      <h3>Autonomous mobile robots</h3>
+      <p class="entry-meta">Academic projects, NED University</p>
+      <p>
+        A line-following robot using reflectance sensing with closed-loop correction,
+        where the interesting part was tuning the control response so it stopped
+        oscillating at speed; and an obstacle-avoiding robot using ultrasonic ranging.
+        Both were early lessons in the distance between a sensor reading and a usable
+        estimate of state.
+      </p>
+      <ul class="stack"><li>Closed-loop control</li><li>Sensor fusion basics</li><li>Embedded C</li></ul>
+      <!-- TODO: repo link -->
+      <p class="study-link"><a href="https://github.com/ShahzaibAliQaimkhani">Repository</a></p>
+    </article>
+
+  </div>
+</section>
+
+<section id="background" class="section">
+  <h2>Background</h2>
+
+  <div class="cols">
+    <div class="col">
+      <h3>Study</h3>
+      <p class="entry-meta">M.Sc. Autonomy Technologies · FAU Erlangen-Nürnberg · Oct 2023 – Mar 2027</p>
+      <p>
+        Specialisations in Human-System Interfaces and Planning &amp; Control. 80 of 120
+        ECTS complete. Coursework in pattern recognition, pattern analysis, deep
+        learning, machine learning in signal processing, swarm intelligence, intent
+        detection and feedback, human-robot co-adaptation, upper-limb prosthetics and
+        rehabilitation robotics. Seminar on the why and how of human gait simulations.
+        Udacity Deep Reinforcement Learning nanodegree alongside.
+      </p>
+      <p class="entry-meta">B.E. Industrial Electronics Engineering · NED University (IIEE), Karachi · Jan 2018 – Dec 2021</p>
+    </div>
+
+    <div class="col">
+      <h3>Before Germany</h3>
+      <p class="entry-meta">Transsion Tecno Electronics, Karachi · Dec 2021 – Oct 2023</p>
+      <p>
+        Two years on the production floor of a consumer electronics plant, first as
+        assistant machine engineer and then as machine engineer. Root-cause analysis on
+        recurring equipment faults, tracking overall equipment effectiveness and
+        downtime, preventive maintenance scheduling, writing the procedures other people
+        worked from, and training new engineering hires.
+      </p>
+      <p>
+        Chasing intermittent faults teaches a habit that transfers directly to machine
+        learning: the failure that shows up in your metrics is rarely where the problem
+        lives.
+      </p>
+    </div>
+  </div>
+
+  <h3 class="tools-head">Tools</h3>
+  <ul class="stack stack-wide" aria-label="Technical skills">
+    <li>Python</li><li>PyTorch</li><li>TensorFlow</li><li>scikit-learn</li><li>NumPy</li>
+    <li>pandas</li><li>Matplotlib</li><li>Zennit</li><li>MATLAB</li><li>ROS2 (basics)</li>
+    <li>C</li><li>C++</li><li>Ladder logic</li>
+  </ul>
+  <ul class="stack stack-wide" aria-label="Methods">
+    <li>Deep learning (CNN, MLP)</li><li>Pattern recognition</li><li>Explainable AI (LRP)</li>
+    <li>Signal processing</li><li>Time-series analysis</li><li>Feature engineering</li>
+    <li>Biomechanics</li><li>Cross-validation design</li>
+  </ul>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Get in touch</h2>
+  <p class="lede">
+    If your group has a thesis topic in learning-based robotics, humanoid control,
+    biomechanics or human-centred machine learning, I'd like to hear about it. I can
+    start in October 2026 and I'm already in Erlangen.
+  </p>
+  <ul class="links">
+    <li><a href="mailto:shahzaib.kk.ali@fau.de">shahzaib.kk.ali@fau.de</a></li>
+    <li><a href="https://www.linkedin.com/in/theshahzaibali">LinkedIn</a></li>
+    <li><a href="https://github.com/ShahzaibAliQaimkhani">GitHub</a></li>
+    <!-- TODO: drop your CV at assets/Shahzaib_Ali_CV.pdf and this link works -->
+    <li><a href="assets/Shahzaib_Ali_CV.pdf">Curriculum vitae (PDF)</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Shahzaib Ali · Erlangen, Germany</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
